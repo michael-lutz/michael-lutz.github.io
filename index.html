@@ -50,7 +50,7 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm fascinated by reinforcement learning, robotics, and memory hierarchy. To combat the high cost of data, I am particularly interested in sample-efficient techniques for learning in complex environments with sparse rewards. Additionally, I am interested in robust demonstration retrieval mechanisms for in-context learning.
+                  I'm fascinated by reinforcement learning, robotics, and memory hierarchy. Currently, I am most interested in researching end-to-end humanoid locomotion policies, highly-parallelized robotic simulation, and training a visually-grounded world model.
                 </p>
               </td>
             </tr>
@@ -101,6 +101,46 @@
             </tr>
           </tbody></table>
 
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <h2>Libraries & Projects</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+            <tr onmouseout="wilbur_stop()" onmouseover="wilbur_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='wilbur_image'><video  width=100% muted autoplay loop>
+                  <source src="images/ksim_humanoid_run.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/wilbur.png' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function wilbur_start() {
+                    document.getElementById('wilbur_image').style.opacity = "1";
+                  }
+
+                  function wilbur_stop() {
+                    document.getElementById('wilbur_image').style.opacity = "0";
+                  }
+                  wilbur_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://www.bardeen.ai/posts/wilbur-adaptive-in-context-learning-for-robust-and-accurate-web-agents">
+                  <span class="papertitle">KSim: An MJX-based humaniod locomotion training library</span>
+                </a>
+                <br>
+                <a href="https://github.com/kscalelabs/ksim">project repo</a>
+                <p>
+                  A simple and efficient JAX-based library for highly-parallelized humanoid locomotion training in MJX environments. The library is designed to be easy to use and extend, and is optimized for training accross multiple GPUs and nodes.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
           
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
